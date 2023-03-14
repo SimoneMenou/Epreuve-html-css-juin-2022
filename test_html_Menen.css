@@ -1,0 +1,201 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Reset css
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+*{
+    box-sizing: border-box;
+}
+/*///////////////////////////////NAVIGATION ////////////////////////////////*/
+@font-face {
+    font-family: "OpenSans";
+    src: url("./assets/opensans/opensans/OpenSans-Regular.ttf");
+}
+body{
+    background-color:#1f203a ;
+}
+header
+{
+    background-color: #1f203a;
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    padding-bottom: 15%;
+}
+.logo
+{
+  padding-left:5%;
+  padding-top:1%;
+}
+nav
+{   
+    padding-left: 60%;
+}
+.nav > ul, li 
+{
+   
+    display: inline-block;
+}
+ li, a:hover
+ {
+    background-color: white;
+    color: #1f203a ;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 36pt;
+    border: solid white 0.5px;
+    background-color: #1f203a;
+    font-family: "OpenSans";
+}
+section.intro
+{
+ background-color: grey;
+ width:100%;
+ display: grid;
+ grid-template-columns :repeat(2,50%);
+ justify-content:center;
+ padding: 10%;
+}
+
+div.team{
+    background-image: url("./assets/men.jpg");
+    background-size: cover;
+    background-position: 100%;
+  
+   
+}
+section.intro>p {
+    text-align: center;
+    font-size: 24pt;
+    margin-left: 45%;
+    font-family: "OpenSans";
+    
+}
+
+section.portfolio{
+    background-color:#1f203a;
+
+}
+section.portfolio>p ,h1,h2{
+    color: white;
+    font-family: "OpenSans";
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 2%;
+   
+
+}
+section.portfolio>h1{
+    
+    font-size: 48pt;
+
+}
+.gallerie 
+{
+  max-width : 1500px;
+  width :100%;
+  height : auto;
+  margin :30px auto;
+  
+  display: grid;
+  grid-template-columns :repeat( 3 ,450px);
+  justify-content:center;
+  grid-gap : 40px;
+  }
+  .gril-item1,.gril-item2,.gril-item3,
+  .gril-item4,.gril-item5,.gril-item6,
+  .gril-item7,.gril-item8,.gril-item9
+  {
+    width:450px;
+    height:450px;
+    background-color :red;
+  } 
+  .gril-item1{
+    background-image: url(./assets/images/images/portfolio1.jpg);
+  }
+  .gril-item2{
+    background-image: url(./assets/images/images/portfolio2.jpg);
+  }
+  .gril-item3{
+    background-image: url(./assets/images/images/portfolio3.jpg);
+  }
+  .gril-item4{
+    background-image: url(./assets/images/images/portfolio4.jpg);
+  }
+  .gril-item5{
+    background-image: url(./assets/images/images/portfolio5.jpg);
+  }
+  .gril-item9{
+    background-image: url(./assets/images/images/portfolio6.jpg);
+  }
+  .gril-item6{
+    background-image: url(./assets/images/images/portfolio7.jpg);
+  }
+  .gril-item7{
+    background-image: url(./assets/images/images/portfolio8.jpg);
+  }
+  .gril-item8{
+    background-image: url(./assets/images/images/portfolio9.jpg);
+  }
+  
+
+
+section.foot {
+    background-color: grey;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: "OpenSans";
+    color: white;
+    font-size: 24pt;
+}
